@@ -1,0 +1,91 @@
+.trip-container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.trip-pera1{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 25px;
+    color: red;
+}
+.trip-pera2{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.trip-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   /* justify-content: center; */
+   padding-left: 40px;
+   padding-top: 100px;
+   
+   
+}
+.trip-card1,.trip-card2 ,.trip-card3 {
+    height: 300px;
+    width: 300px;
+    background-color: whitesmoke;
+    color: white;
+    border-radius: 20px;
+} 
+.trip-card1:hover,.trip-card2:hover ,.trip-card3:hover{
+    zoom:1.1;
+    box-shadow: 2px 2px 10px 5px red;
+}
+.car,.contact,.drive{
+    background-color: red;
+    font-size: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+
+.trip-card1 h3,.trip-card2 h3,.trip-card3 h3{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+}
+.trip-card1 p,.trip-card2 p,.trip-card3 p{
+    color: black;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+@media(max-width:948px){
+    .trip-card{
+        padding-left: 10px;
+    }
+    .trip-card1,.trip-card2 ,.trip-card3 {
+        height: 400px;
+        width: 200px;
+    }
+    .car,.contact,.drive{
+        margin-left: 60px;
+    }
+
+}
+
+@media(max-width:630px){
+    .trip-card{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        gap: 40px;
+    }
+    .trip-container{
+        height: 200vh;
+    }
+    .trip-card1,.trip-card2 ,.trip-card3 {
+        height: 300px;
+        width: 300px;
+    }
+    .trip-card{
+        padding-left: 0px;
+    }
+    .car,.contact,.drive{
+        margin-left: 110px;
+    }
+}

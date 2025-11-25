@@ -1,0 +1,26 @@
+.bannner-container{
+    height: 150px;
+    background-color: white;
+}
+.bannner-container h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.bannner-container h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.bannner-container .hours{
+    color: red;
+    font-weight: 800;
+}
+
+@media(max-width:434px){
+    .bannner-container {
+        height: 200px;
+    }
+}
