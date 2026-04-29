@@ -12,7 +12,7 @@ function VehicleInfo() {
   const [vehicle, setVehicle] = useState([0])
 
   const innova = async () => {
-    let result = await fetch("http://localhost:7000/info")
+    let result = await fetch("https://godrive-1-ic3b.onrender.com/info")
     result = await result.json();
     // console.log(result[0])
     // let id = JSON.parse(localStorage.getItem('vehichleinfos'))._id;
@@ -21,7 +21,7 @@ function VehicleInfo() {
   }
 
   const fortuner = async () => {
-    let result = await fetch("http://localhost:7000/info")
+    let result = await fetch("https://godrive-1-ic3b.onrender.com/info")
     result = await result.json();
     // console.log(result[1])
     // let id = JSON.parse(localStorage.getItem('vehichleinfos'))._id
@@ -29,7 +29,7 @@ function VehicleInfo() {
   }
 
   const getid = async () => {
-    let result = await fetch("http://localhost:7000/info")
+    let result = await fetch("https://godrive-1-ic3b.onrender.com/info")
     result = await result.json();
     // console.log(result[2])
     // let id = JSON.parse(localStorage.getItem('vehichleinfos'))._id
@@ -37,7 +37,7 @@ function VehicleInfo() {
   }
 
   const swift = async () => {
-    let result = await fetch("http://localhost:7000/info")
+    let result = await fetch("https://godrive-1-ic3b.onrender.com/info")
     result = await result.json();
     // console.log(result[3])
     // let id = JSON.parse(localStorage.getItem('vehichleinfos'))._id
@@ -45,7 +45,7 @@ function VehicleInfo() {
   }
 
   const creta = async () => {
-    let result = await fetch("http://localhost:7000/info")
+    let result = await fetch("https://godrive-1-ic3b.onrender.com/info")
     result = await result.json();
     // console.log(result[4])
     // let id = JSON.parse(localStorage.getItem('vehichleinfos'))._id
@@ -53,7 +53,7 @@ function VehicleInfo() {
   }
 
   const audi = async () => {
-    let result = await fetch("http://localhost:7000/info")
+    let result = await fetch("https://godrive-1-ic3b.onrender.com/info")
     result = await result.json();
     // console.log(result[5])
     // let id = JSON.parse(localStorage.getItem('vehichleinfos'))._id
@@ -61,7 +61,7 @@ function VehicleInfo() {
   }
 
   const bmw = async () => {
-    let result = await fetch("http://localhost:7000/info")
+    let result = await fetch("https://godrive-1-ic3b.onrender.com/info")
     result = await result.json();
     // console.log(result[6])
     // let id = JSON.parse(localStorage.getItem('vehichleinfos'))._id
