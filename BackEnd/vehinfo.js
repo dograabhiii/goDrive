@@ -11,4 +11,5 @@ const prodSchema=mongoose.Schema({
     fuel:String,
 })
 
-module.exports=mongoose.model("vehichleinfos",prodSchema)
+const vehModel = mongoose.model("vehichleinfos",prodSchema,"vehichleinfos");
+module.exports = vehModel;
