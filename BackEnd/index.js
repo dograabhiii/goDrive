@@ -6,7 +6,9 @@ const vehModel=require('./vehinfo')
 
 const cors=require('cors');
 const vehinfo = require('./vehinfo');
-app.use(cors())
+
+app.use(cors());
+
 app.use(express.json());
 
 app.post("/a",async(req,res)=>{
