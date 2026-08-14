@@ -73,7 +73,7 @@ function VehicleInfo() {
         <h5>Vehicle Models</h5>
         <h2>Our rental fleet</h2>
         <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
-      </div>
+      </div> 
       <div className="info-cards">
         <div className="info-card1">
           <button className='select-btn' onClick={innova}>Innova Crysta</button>

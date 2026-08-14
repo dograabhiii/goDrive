@@ -6,7 +6,7 @@ import { IoMenu } from "react-icons/io5";
 
 
 function NavBar() {
-  const [click,setClick]=useState(false);
+  const [click, setClick]=useState(false);
   const handleClick=()=>setClick(!click);
  
 
@@ -18,10 +18,10 @@ function NavBar() {
     <div>
       <ul id="navbar" className={click ? "#navbar active" : "#navbar"}>
       
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/chooseus">About </Link></li>
-        <li><Link to="/footer">Contact</Link></li>
-        <li><Link to="booking">Book</Link></li>
+        <li><Link onClick={()=> setClick(false)} to="/">Home</Link></li>
+        <li><Link onClick={()=> setClick(false)} to="/chooseus">About </Link></li>
+        <li><Link onClick={()=> setClick(false)} to="/footer">Contact</Link></li>
+        <li><Link onClick={()=> setClick(false)} to="booking">Book</Link></li>
         
       </ul>
     </div>

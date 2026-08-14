@@ -1,19 +1,21 @@
 .image{
-    height: 500px;
+    height: 300px;
     width: 100%;
     background-image: url("https://www.nameoftheyear.com/wp-content/uploads/2024/02/black-cars-4.jpg");
     object-fit: cover;
+    background-position: center;
     
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    height: 560px;
+    height: 100%;
     background-color: black;
     color: white;
+    padding: 20px 0px;
 }
 .card1 ,.card2{
-    width: 550px;
+    /* width: 550px; */
     padding-left: 100px;
     margin-top: 70px;
 }
@@ -58,7 +60,7 @@
     padding: 10px;
 }
 .row1 h4,.row2 h4,.row3 h4{
-    margin-left: 70px;
+    /* margin-left: 70px; */
     font-weight: 300;
     font-size: 17px;
 }
@@ -74,32 +76,32 @@
     .cards{
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
-        height: 150vh;
+        /* height: 150vh; */
+    }
+    .card1 ,.card2{
+        width: 100%;
+        padding: 50px;
+    }
+    .card2{
+        margin-top: 0;
     }
     
 }
+
 
 @media(max-width:408px){
     .card2 .row1,.card2 .row2,.card2 .row3{
         flex-direction: column;
     }
-    .cards{
-        height: 200vh;
-    }
-    .card1, .card2 {
-        padding-right: 70px;
-    }
-    .row1 h4, .row2 h4, .row3 h4 {
-        margin-left: 20px;
+    
+    .row1 h1, .row2 h1, .row3 h1 {
+       font-size: 26px;
     }
  }
 
- @media(max-width:406px){
-    .card1, .card2 {
-        padding-right: 40px;
-        width: 300px;
-    }
-    .cards{
-        height: 220vh;
+ @media (max-width:500px) {
+    .card1, .card2{
+        padding: 50px 20px;
     }
  }
+ 

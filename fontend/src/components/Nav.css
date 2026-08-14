@@ -20,9 +20,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     padding: 10px 20px;
-    box-shadow: o 5px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    height: 70px;
 }
 #navbar{
     display: flex;
@@ -72,13 +73,13 @@ nav{
         align-items: flex-start;
         justify-content: flex-start;
         position: fixed;
-        top: 80px;
+        top: 0px;
         right: -300px;
         width: 250px;
         height: 100vh;
-        background-color: rgba(0,0,0,0.6);
-        box-shadow: 0 40px 60px grey;
-        padding: 30px 0 0 10px;
+        background-color: rgba(0,0,0,0.95);
+        /* box-shadow: 0 40px 60px grey; */
+        padding: 90px 0 0 10px;
         transition: 0.3s ease-in-out;
     }
     #navbar.active{

@@ -1,10 +1,10 @@
 .footer-container{
-    height: 300px;
+    /* height: 300px; */
     display: grid;
     color: white;
     grid-template-columns: repeat(4,1fr);
-    padding-top: 50px;
-    padding-left: 40px;
+    gap: 40px;
+    padding: 50px 40px;
     background-image: url('https://img.freepik.com/free-photo/3d-grunge-style-road-texture_1048-16444.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1711238400&semt=ais');
     background-position: center;
     background-repeat: no-repeat;
@@ -40,19 +40,21 @@
 .footer-card4 input{
     margin-top: 10px;
     font-style: 25px;
-    padding: 5px;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border: 1px solid grey;
     border-radius: 10px;
 }
+
 .footer-card4 button{
     font-size: 18px;
-    padding: 5px;
+    padding: 10px 40px;
     border: none;
     border-radius: 20px;
     background-color: red;
     color: white;
+    margin-left: 0;
 }
 .footer-card4 button:hover{
     background-color: white;
@@ -63,13 +65,14 @@
 @media(max-width:827px){
     .footer-container{
         grid-template-columns: repeat(2,1fr);
-        height: 100vh;
     }
 }
 
-@media(max-width:458px){
+@media(max-width:530px){
     .footer-container{
         grid-template-columns: repeat(1,1fr);
-        height: 150vh;
+    }
+    .footer-card4 input, .footer-card4 button{
+        width: 100%;
     }
 }

@@ -1,38 +1,39 @@
 .booking-container{
-    height: 100vh;
-    width: 100%;
+    /* height: 100vh;
+    width: 100%; */
     background-image: url("https://m.economictimes.com/thumb/msid-102952769,width-1600,height-900,resizemode-4,imgsize-26866/the-cars-exterior-design-includes-a-removable-carbon-fiber-hardtop-and-a-modern-grille-.jpg") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .booking-container .book{
-    height: 500px;
-    width: 800px;
-    background-color: rgb(0, 0, 0,0.6);
-   position: absolute;
-   top: 90px;
-   left: 250px;
-   border-radius: 20px;
+    /* height: 500px;
+    width: 800px; */
+    background-color: rgb(0, 0, 0,0.84);
+   margin: 50px 0px;
+   padding : 50px 20px;
    
    /* border:1px solid red; */
 }
 .book-title{
     color: red;
     text-align: center;
-    margin-top: 30px;
 }
 form{
     font-size: 25px;
-    margin-left: 20px;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .form-input{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-items: center;
+    gap: 40px;
 }
 form label{
     color: white;
@@ -40,45 +41,36 @@ form label{
 form #cars, form option , form input{
     color: white;
     font-size: 18px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     border-style: solid;
     border:1px solid grey;
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 form #cars,form input{
-    width: 150px;
+    width: stretch;
     background-color: rgb(0, 0, 0,0.4);
 }
 form .search-btn{
     font-size: 20px;
     background-color: red;
     color: white;
-    padding: 10px;
+    padding: 7px 40px;
     border-style: none;
     border-radius: 4px;
-   margin-top: 80px;
-   margin-left: 300px;
+   margin: 0;
    
 }
 
 
-@media(max-width:1054px){
-    .booking-container .book{
-        height: 100%;
-        width: 100%;
-        top: 0px;
-        left: 0px;
-    }
-}
 @media(max-width:689px){
     .form-input{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-}
-
-@media(max-width:430px){
+    .form-input div{
+        width: 100%;    
+    }
     form .search-btn {
-        margin-left: 100px;
+        width: 100%;
     }
 }
